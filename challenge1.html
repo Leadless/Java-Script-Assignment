@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Built-in Functions</title>
+</head>
+<body>
+	<p id="answer"></p>
+	
+	<script type="text/javascript">
+		var name = prompt("What's your name?")
+		var ageStart = prompt("How old were you when you first used a computer?")
+		var ageNow = prompt("How old are you now?")
+		var ageDiff = ageNow - ageStart
+
+		if (name != null) {
+			document.getElementById("answer").innerHTML = name + ", you have used computers for " + ageDiff + " years."
+		}	
+	</script>
+</body>
+</html>
